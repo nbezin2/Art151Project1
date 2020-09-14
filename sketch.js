@@ -1,24 +1,28 @@
-
-var x = 0;
-var y = 1;
-
+let allBrush = [];
+let allDX = [3,5];
+let backC = 0;
 
 function setup() {
-  // put setup code here
-  createCanvas(400,400);
-  
+	// put setup code here
+	backC = map(mouseX+mouseY, 0,800, 0,255);
+	
+	createCanvas(1920,700);
+	background(backC);
+	
+	for (let i = 0; i < 2; i++) {
+		allBrush.push(new Brush(5, random(0,80)*5, 5, 5, random(0,256), random(0,256), random(0,256), allDX[i], allDX[i]/5));
+	}
+	
 }
 
 function draw() {
-  //put drawing code here
-  background(0);
-  
-	fill(150);
-	stroke(25,61,81);
-	rect(x, 20, 20,20);
-	x += y;
-	
-	if (x+20 == width || x == 0) {
-		y = -y;
+	//put drawing code here
+	for (let i=0; i<2; i++) {
+		allBrush[i].show();
+		allBrush[i].updatePos();
 	}
+}
+
+function mouseReleased() {
+	background(0);
 }
