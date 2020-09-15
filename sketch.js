@@ -1,7 +1,7 @@
 let allBrush = [];
 
 function setup() {
-	createCanvas(500,500);
+	createCanvas(windowWidth,windowHeight);
 	background(0);
 	
 	for (let i = 0; i < 2; i++) {
@@ -15,6 +15,10 @@ function draw() {
 		allBrush[i].show();
 		allBrush[i].update();
 	}
+        if (windowWidth != width || windowHeight != height) {
+                resizeCanvas(windowWidth, windowHeight);
+                background(0);
+        }
 }
 
 function mouseReleased() {
