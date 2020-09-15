@@ -1,0 +1,12 @@
+Colors:
+The colors change based on the position of the circle. The further right increases the Red color, the further down increases the Green color
+and the position of you mouse the closer you get to the bottom right corner adds more Blue color.
+
+Speed and Direction of circles:
+The mouse influences the direction of the circle. When you bring the mouse to the right side of the canvas you will increase the speed in the
+x-axis and when you bring the mouse further down you will increase the speed in the y-axis.
+
+Left Clicking:
+This will reset the canvas so you can start a new drawing.
+
+Play around and enjoy!
