@@ -23,6 +23,12 @@ function draw() {
   }
 }
 
+function keypressed() {
+	if (keycode == BACKSPACE) {
+		saveCanvas(mycanvas,"screenshot"+formatted_number,"png");
+	}
+}
+
 function mouseReleased() {
 	background(0);
 }
