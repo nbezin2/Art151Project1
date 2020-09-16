@@ -1,7 +1,7 @@
 let allBrush = [];
 
 function setup() {
-	// put setup code here
+  
 	createCanvas(windowWidth,windowHeight);
 	background(0);
 	
@@ -20,7 +20,7 @@ function draw() {
 	if (windowWidth != width || windowHeight != height) {
 		resizeCanvas(windowWidth, windowHeight);
 		background(0);
-	}
+  }
 }
 
 function mouseReleased() {
