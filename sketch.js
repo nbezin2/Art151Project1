@@ -23,8 +23,8 @@ function draw() {
   }
 }
 
-function keypressed() {
-	if (keycode == BACKSPACE) {
+function keyPressed() {
+	if (keyCode == BACKSPACE) {
 		saveCanvas(mycanvas,"screenshot"+formatted_number,"png");
 	}
 }
